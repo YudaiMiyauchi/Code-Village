@@ -1,5 +1,13 @@
 footer {
   height: 342px;
+  @include sp {
+    height: 260px;
+  }
+}
+
+.f-inner {
+  padding: 60px 0 20px;
+  width: 90%;
 }
 
 .line {
@@ -9,18 +17,43 @@ footer {
 }
 
 .f-wrap {
-  margin-top: 248px;
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @include sp {
     flex-direction: column-reverse;
-    height: 117px;
+    margin-top: 60px;
   }
 }
 
-.salon {
+.ff-wrap {
   display: flex;
+  @include sp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .salon {
+    text-align: left;
+    font: normal normal normal 32px/32px Roboto Mono for Powerline;
+    letter-spacing: 3.2px;
+    color: #7070704d;
+    text-transform: uppercase;
+    opacity: 1;
+    @include sp {
+      margin-right: 350px;
+      text-align: left;
+      font: normal normal normal 18px/22px Roboto Mono for Powerline;
+      letter-spacing: 1.8px;
+      color: #7070704d;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+    .icon {
+      color: black;
+      font-size: 25px;
+    }
+  }
 }
 
 .button {

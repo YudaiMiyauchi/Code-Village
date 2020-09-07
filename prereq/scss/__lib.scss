@@ -24,18 +24,13 @@
 /////////共通//////////
 /////////////////////
 
-body {
-  @include sp {
-    width: 650px;
-  }
-}
-
 .inner {
   width: 84%;
   margin: 0 auto;
   padding: 256px 0 60px;
   @include tab {
-    padding: 90px 0 60px;
+    padding: 60px 0 60px;
+    width: 90%;
   }
 }
 
