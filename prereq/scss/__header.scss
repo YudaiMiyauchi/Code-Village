@@ -20,7 +20,7 @@ h1 {
 
 .ham {
   display: none;
-  @include tab {
+  @include sp {
     width: 16px;
     height: 14px;
     display: flex;

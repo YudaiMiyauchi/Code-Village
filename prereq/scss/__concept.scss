@@ -1,5 +1,8 @@
 .concept {
   background: linear-gradient(#a193861f 0% 42%, #a1938689 42% 100%);
+  @include sp {
+    background: linear-gradient(#a193861f 0% 25%, #a1938689 25% 100%);
+  }
 }
 
 .img {
@@ -16,6 +19,7 @@
   background-position: 100% 100%;
   @include sp {
     width: 49%;
+    height: 205px;
   }
 }
 
@@ -26,6 +30,7 @@
   background-position: 100% 100%;
   @include sp {
     width: 49%;
+    height: 205px;
   }
 }
 
@@ -38,7 +43,7 @@
   padding: 65px;
   @include sp {
     flex-direction: column;
-    padding: 60px 20px;
+    padding: 0;
     line-height: 23px;
   }
 }
@@ -50,7 +55,8 @@
   letter-spacing: 16px;
   color: #ffffff;
   @include sp {
-    text-align: left;
+    width: 100%;
+    text-align: center;
     font: normal normal normal 18px/31px Hiragino Mincho Pro;
     letter-spacing: 7.2px;
     color: #ffffff;
@@ -67,4 +73,7 @@
   font: normal normal normal 16px/27px Hiragino Kaku Gothic Pro;
   letter-spacing: 1.6px;
   color: #ffffff;
+  @include sp {
+    width: 100%;
+  }
 }

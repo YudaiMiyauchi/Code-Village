@@ -171,10 +171,6 @@ select {
   vertical-align: middle; }
 
 /*# sourceMappingURL=reset.css.map */
-@media (max-width: 650px) {
-  body {
-    width: 650px; } }
-
 .inner {
   width: 84%;
   margin: 0 auto;
@@ -221,7 +217,7 @@ h1 {
 
 .ham {
   display: none; }
-  @media (max-width: 960px) {
+  @media (max-width: 650px) {
     .ham {
       width: 16px;
       height: 14px;
@@ -260,7 +256,7 @@ nav ul {
   position: relative; }
   @media (max-width: 650px) {
     .v-left {
-      width: 170%;
+      width: 100vw;
       position: absolute;
       color: white; } }
 
@@ -293,10 +289,14 @@ nav ul {
   background-size: cover; }
   @media (max-width: 650px) {
     .v-right {
-      width: 100%; } }
+      width: 100%;
+      height: 100vh; } }
 
 .concept {
   background: linear-gradient(#a193861f 0% 42%, #a1938689 42% 100%); }
+  @media (max-width: 650px) {
+    .concept {
+      background: linear-gradient(#a193861f 0% 25%, #a1938689 25% 100%); } }
 
 .img {
   width: 100%;
@@ -311,7 +311,8 @@ nav ul {
   background-position: 100% 100%; }
   @media (max-width: 650px) {
     .img-left {
-      width: 49%; } }
+      width: 49%;
+      height: 205px; } }
 
 .img-right {
   width: 35%;
@@ -320,7 +321,8 @@ nav ul {
   background-position: 100% 100%; }
   @media (max-width: 650px) {
     .img-right {
-      width: 49%; } }
+      width: 49%;
+      height: 205px; } }
 
 .text {
   color: #ffffff;
@@ -332,7 +334,7 @@ nav ul {
   @media (max-width: 650px) {
     .text {
       flex-direction: column;
-      padding: 60px 20px;
+      padding: 0;
       line-height: 23px; } }
 
 .text-a {
@@ -343,7 +345,8 @@ nav ul {
   color: #ffffff; }
   @media (max-width: 650px) {
     .text-a {
-      text-align: left;
+      width: 100%;
+      text-align: center;
       font: normal normal normal 18px/31px Hiragino Mincho Pro;
       letter-spacing: 7.2px;
       color: #ffffff;
@@ -358,6 +361,9 @@ nav ul {
   font: normal normal normal 16px/27px Hiragino Kaku Gothic Pro;
   letter-spacing: 1.6px;
   color: #ffffff; }
+  @media (max-width: 650px) {
+    .text-b {
+      width: 100%; } }
 
 .menu-wrap {
   width: 100%;
@@ -401,6 +407,9 @@ nav ul {
   right: 0; }
   @media (max-width: 650px) {
     .price {
+      position: relative;
+      width: 100%;
+      text-align: right;
       margin-bottom: 50px; } }
 
 .access {
@@ -481,7 +490,7 @@ footer {
     opacity: 1; }
     @media (max-width: 650px) {
       .ff-wrap .salon {
-        margin-right: 350px;
+        margin-right: 50px;
         text-align: left;
         font: normal normal normal 18px/22px Roboto Mono for Powerline;
         letter-spacing: 1.8px;
